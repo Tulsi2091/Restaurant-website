@@ -1,0 +1,62 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <title>
+        Bon - Appetit
+        </title>
+        <link rel="icon" href="logo.png">
+        <link rel="stylesheet" href="Style.css">
+        <script src="javascript.js"></script>
+    </head>
+    <body>
+    <div class="account-page">
+    <div class="container">
+    <div class="row">
+    <div class="col">
+    <div class="form-container">
+    <div class="form-btn">
+        <span onclick="login()" id="Sign" style="color:#fff;">Sign In</span>
+        <span onclick="register()" id="Sign" style="color:#fff;">Sign Up</span>
+        <hr id="Indicator">
+    </div>
+    <form id="LoginForm" action="Main.html" onsubmit="return validateLoginForm()">
+        <input type="text" id="loginmail" placeholder="Mail ID">
+        <span id="LoginMailWarning" class="Warning"></span>
+        <input type="password" id="loginpwd" placeholder="Password">
+        <span id="LoginPWDWarning" class="Warning"></span>
+        <button type="submit" class="btn" onclick="return validateLoginForm()">Login</button>
+        <a href="">Forgot Password?</a>
+    </form>
+    <form id="RegForm" action="Main.html" onsubmit="return validateRegisterForm()">
+        <input type="text" id="name" placeholder="Username">
+        <span id="NameWarning" class="Warning"></span>
+        <input type="email" id="mail" placeholder="Email">
+        <span id="MailWarning" class="Warning"></span>
+        <input type="password" id="pwd" placeholder="Password">
+        <span id="PWDWarning" class="Warning"></span>
+        <input type="password" id="conpwd" placeholder="Re-Enter Password">
+        <span id="ConPWDWarning" class="Warning"></span>
+        <button type="submit" class="btn" onclick="return validateRegisterForm()">Register</button>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+    function register(){
+    RegForm.style.transform = "translateX(0px)";
+    LoginForm.style.transform = "translateX(0px)";
+    Indicator.style.transform = "translateX(100px)";
+    }
+    function login(){
+    RegForm.style.transform = "translateX(300px)";
+    LoginForm.style.transform = "translateX(300px)";
+    Indicator.style.transform = "translateX(0px)";
+    }
+    </script>
+</body>
+</html>
