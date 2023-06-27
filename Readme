@@ -1,0 +1,7 @@
+Restaurant website                                                      
+
+---> This is frontend of a restaurent website "Bon-Appetit". It allows user to sign up or sign in. It provides menu details and other restaurant details with the facility to make reservation.
+
+---> Designed the front end for displaying restaurant and menu details along with making reservations for easy interaction of customers with the restaurant using HTML5 and CSS3.  
+
+---> Utilized JavaScript for validation of email-id and password allowing the user to either sign up to a new account or sign in to an already existing one. 
